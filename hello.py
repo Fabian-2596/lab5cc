@@ -8,7 +8,7 @@ def hello():
 
 @app.route("/route32a")
 def route32a():
-    return "Hello from the 32A"
+    return "Hello from the A"
 
 @app.route("/route")
 def route():
