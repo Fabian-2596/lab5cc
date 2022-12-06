@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
-COPY ./requirements.txt /lab5cc/requirements.txt
-WORKDIR /lab5cc
+COPY ./requirements.txt /app/requirements.txt
+WORKDIR /app
 RUN pip install -r requirements.txt
-COPY . /lab5cc
+COPY . /app
 ENTRYPOINT [ "python" ]
 CMD ["hello.py" ]
